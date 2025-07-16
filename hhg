@@ -1,11 +1,11 @@
 from datetime import date
 
 objeto = {
-    "nombre": "Gabriel",
-    "edad": 23,
+    "nombre": "noefort",
+    "edad": 17,
     "ciudad": "buenos aires",
 }
-objeto["cumple"]=date(2001,6,11)
+objeto["cumple"]=date(2008,5,10)
 hoy = date.today()
 objeto["edad"] = (
     hoy.year - objeto["cumple"].year
@@ -21,18 +21,18 @@ def cumpleHoy(fechaDeHoy,
     )
     return mismoMes and mismoDia
 
-objeto2 = dict(nombre = "andres", 
-               edad = 21, 
+objeto2 = dict(nombre = "martin", 
+               edad = 19, 
                ciudad = "buenos aires",
-               cumple = date(2004,2,25))
+               cumple = date(2006,4,28))
 listaDeDiccionarios = [
     objeto,
     objeto2,
     {
-        "nombre":"pablo",
-        "edad":55,
+        "nombre":"franco",
+        "edad":15,
         "ciudad":"buenos aires",
-        "cumple":date(1969,11,24),
+        "cumple":date(2010,1,28),
         "hijos":(objeto,objeto2)
     }
 ]
